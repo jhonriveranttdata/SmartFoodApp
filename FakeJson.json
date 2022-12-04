@@ -1,0 +1,16 @@
+
+[
+    {
+        "id": 1,
+        "nombre":"Frito piurano",
+        "categoria":"Segundo",
+        "categoria2":"Comida Norteña",
+        "ingredientes": "4 tazas de arroz | 4 tazas de agua | 1 cucharada de ajo molido | 2 cucharadas de aceite | Sal al gusto | 4 cebollas rojas en gajos",
+        "preparacion":[
+            "paso1":"
+        ],
+        "recomendacion":"true",
+        "puntuacion":4.4
+        "img":"https://comidasperuanas.net/wp-content/uploads/2021/01/Frito-piurano.jpg"
+    }
+]
