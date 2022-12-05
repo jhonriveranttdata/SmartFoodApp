@@ -10,7 +10,6 @@
 		A002DF202938187E004D7D3E /* FakeJson.json in Resources */ = {isa = PBXBuildFile; fileRef = A002DF1F2938187E004D7D3E /* FakeJson.json */; };
 		A006ADB629311EBA005CEC0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006ADB529311EBA005CEC0E /* AppDelegate.swift */; };
 		A006ADB829311EBA005CEC0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006ADB729311EBA005CEC0E /* SceneDelegate.swift */; };
-		A006ADBA29311EBA005CEC0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006ADB929311EBA005CEC0E /* ViewController.swift */; };
 		A006ADBD29311EBA005CEC0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A006ADBB29311EBA005CEC0E /* Main.storyboard */; };
 		A006ADBF29311EBC005CEC0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A006ADBE29311EBC005CEC0E /* Assets.xcassets */; };
 		A006ADC229311EBC005CEC0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A006ADC029311EBC005CEC0E /* LaunchScreen.storyboard */; };
@@ -19,6 +18,11 @@
 		A0AFA019293E18AF006C78DB /* ListFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFA018293E18AF006C78DB /* ListFoodViewController.swift */; };
 		A0AFA01B293E27F5006C78DB /* ModalFoodDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFA01A293E27F5006C78DB /* ModalFoodDetailsViewController.swift */; };
 		A0AFA01F293E605E006C78DB /* DateFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFA01E293E605E006C78DB /* DateFoodViewController.swift */; };
+		A0AFA024293EA152006C78DB /* PrototypeFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AFA023293EA152006C78DB /* PrototypeFood.storyboard */; };
+		A0AFA026293EABEF006C78DB /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFA025293EABEF006C78DB /* HomeTableViewCell.swift */; };
+		A0AFA028293EAEF5006C78DB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFA027293EAEF5006C78DB /* HomeCollectionViewCell.swift */; };
+		A0AFA02A293EB0AA006C78DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFA029293EB0AA006C78DB /* HomeViewController.swift */; };
+		A0AFA02C293EB160006C78DB /* FoodCollectionSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFA02B293EB160006C78DB /* FoodCollectionSections.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +30,6 @@
 		A006ADB229311EBA005CEC0E /* SmartFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A006ADB529311EBA005CEC0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A006ADB729311EBA005CEC0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A006ADB929311EBA005CEC0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A006ADBC29311EBA005CEC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A006ADBE29311EBC005CEC0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A006ADC129311EBC005CEC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		A0AFA018293E18AF006C78DB /* ListFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodViewController.swift; sourceTree = "<group>"; };
 		A0AFA01A293E27F5006C78DB /* ModalFoodDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalFoodDetailsViewController.swift; sourceTree = "<group>"; };
 		A0AFA01E293E605E006C78DB /* DateFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFoodViewController.swift; sourceTree = "<group>"; };
+		A0AFA023293EA152006C78DB /* PrototypeFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrototypeFood.storyboard; sourceTree = "<group>"; };
+		A0AFA025293EABEF006C78DB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		A0AFA027293EAEF5006C78DB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0AFA029293EB0AA006C78DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A0AFA02B293EB160006C78DB /* FoodCollectionSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionSections.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,20 +77,48 @@
 		A006ADB429311EBA005CEC0E /* SmartFoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				A0AFA022293E9E9F006C78DB /* Views */,
+				A0AFA021293E9E96006C78DB /* Models */,
+				A0AFA020293E9E8B006C78DB /* Controllers */,
 				A006ADB529311EBA005CEC0E /* AppDelegate.swift */,
 				A006ADB729311EBA005CEC0E /* SceneDelegate.swift */,
-				A006ADB929311EBA005CEC0E /* ViewController.swift */,
-				A006ADBB29311EBA005CEC0E /* Main.storyboard */,
 				A006ADBE29311EBC005CEC0E /* Assets.xcassets */,
-				A006ADC029311EBC005CEC0E /* LaunchScreen.storyboard */,
 				A006ADC329311EBC005CEC0E /* Info.plist */,
-				A0AFA014293D2804006C78DB /* FoodModel.swift */,
-				A0AFA016293E1751006C78DB /* FoodTableViewCell.swift */,
-				A0AFA018293E18AF006C78DB /* ListFoodViewController.swift */,
-				A0AFA01A293E27F5006C78DB /* ModalFoodDetailsViewController.swift */,
-				A0AFA01E293E605E006C78DB /* DateFoodViewController.swift */,
 			);
 			path = SmartFoodApp;
+			sourceTree = "<group>";
+		};
+		A0AFA020293E9E8B006C78DB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0AFA016293E1751006C78DB /* FoodTableViewCell.swift */,
+				A0AFA018293E18AF006C78DB /* ListFoodViewController.swift */,
+				A0AFA01E293E605E006C78DB /* DateFoodViewController.swift */,
+				A0AFA01A293E27F5006C78DB /* ModalFoodDetailsViewController.swift */,
+				A0AFA025293EABEF006C78DB /* HomeTableViewCell.swift */,
+				A0AFA027293EAEF5006C78DB /* HomeCollectionViewCell.swift */,
+				A0AFA029293EB0AA006C78DB /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A0AFA021293E9E96006C78DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0AFA014293D2804006C78DB /* FoodModel.swift */,
+				A0AFA02B293EB160006C78DB /* FoodCollectionSections.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0AFA022293E9E9F006C78DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A006ADBB29311EBA005CEC0E /* Main.storyboard */,
+				A006ADC029311EBC005CEC0E /* LaunchScreen.storyboard */,
+				A0AFA023293EA152006C78DB /* PrototypeFood.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +182,7 @@
 				A006ADC229311EBC005CEC0E /* LaunchScreen.storyboard in Resources */,
 				A006ADBF29311EBC005CEC0E /* Assets.xcassets in Resources */,
 				A002DF202938187E004D7D3E /* FakeJson.json in Resources */,
+				A0AFA024293EA152006C78DB /* PrototypeFood.storyboard in Resources */,
 				A006ADBD29311EBA005CEC0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,12 +195,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AFA015293D2804006C78DB /* FoodModel.swift in Sources */,
-				A006ADBA29311EBA005CEC0E /* ViewController.swift in Sources */,
+				A0AFA02C293EB160006C78DB /* FoodCollectionSections.swift in Sources */,
 				A006ADB629311EBA005CEC0E /* AppDelegate.swift in Sources */,
 				A006ADB829311EBA005CEC0E /* SceneDelegate.swift in Sources */,
 				A0AFA01F293E605E006C78DB /* DateFoodViewController.swift in Sources */,
 				A0AFA019293E18AF006C78DB /* ListFoodViewController.swift in Sources */,
+				A0AFA02A293EB0AA006C78DB /* HomeViewController.swift in Sources */,
+				A0AFA028293EAEF5006C78DB /* HomeCollectionViewCell.swift in Sources */,
 				A0AFA017293E1751006C78DB /* FoodTableViewCell.swift in Sources */,
+				A0AFA026293EABEF006C78DB /* HomeTableViewCell.swift in Sources */,
 				A0AFA01B293E27F5006C78DB /* ModalFoodDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

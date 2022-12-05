@@ -15,10 +15,10 @@ class FoodTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    @IBOutlet weak var nameFoodCell: UILabel!
-    @IBOutlet weak var imageFoodCell: UIImageView!
-    @IBOutlet weak var descriptionFoodCellLabel: UILabel!
-    @IBOutlet weak var scoreFoodCellLabel: UILabel!
+    @IBOutlet private weak var nameFoodCell: UILabel!
+    @IBOutlet private weak var imageFoodCell: UIImageView!
+    @IBOutlet private weak var descriptionFoodCellLabel: UILabel!
+    @IBOutlet private weak var scoreFoodCellLabel: UILabel!
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -27,7 +27,6 @@ class FoodTableViewCell: UITableViewCell {
     }
 
     func setupViewCell(food:FoodModel){
-        
         nameFoodCell.text = food.nameFood
         descriptionFoodCellLabel.text = food.descriptionFood
         scoreFoodCellLabel.text = String(food.score)
