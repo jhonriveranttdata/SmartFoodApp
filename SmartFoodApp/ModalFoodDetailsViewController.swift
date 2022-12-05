@@ -14,11 +14,11 @@ class ModalFoodDetailsViewController: UIViewController {
     @IBOutlet weak var nameFoodLabel: UILabel!
     @IBOutlet weak var categoryFoodLabel: UILabel!
     
-    var nameFood:String?
-    var categoryFood:String?
+    var receivedFood: FoodModel = FoodModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameFoodLabel.text = nameFood
-        categoryFoodLabel.text = categoryFood
+        nameFoodLabel.text = receivedFood.nameFood
+        categoryFoodLabel.text = receivedFood.category
     }
 }
