@@ -7,18 +7,21 @@
 
 import Foundation
 
-class FoodModel {
+struct FoodModel: Codable {
     var nameFood:String
     var descriptionFood:String
     var recommendation:Bool
     var category:String
     var score:Float
-    init(nameFood: String, descriptionFood: String, recommendation: Bool, category: String, score: Float) {
+    var foodFavorite: Bool
+    
+    init(nameFood: String, descriptionFood: String, recommendation: Bool, category: String, score: Float, foodFavorite:Bool) {
         self.nameFood = nameFood
         self.descriptionFood = descriptionFood
         self.recommendation = recommendation
         self.category = category
         self.score = score
+        self.foodFavorite = foodFavorite
     }
     init(){
         self.nameFood = ""
@@ -26,5 +29,12 @@ class FoodModel {
         self.recommendation = false
         self.category = ""
         self.score = 0
+        self.foodFavorite = false
+    }
+}
+extension FoodModel: Identifiable{
+    var id: UUID{
+        let id = UUID()
+        return id
     }
 }

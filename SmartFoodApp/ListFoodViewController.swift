@@ -20,7 +20,7 @@ class ListFoodViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        fillData()
+        fillDataFood()
         searchFoodTextField.addTarget(self, action:#selector(searchTextField), for: .editingChanged)
         tableView.dataSource = self
         tableView.delegate = self
@@ -48,18 +48,19 @@ class ListFoodViewController: UIViewController {
       
             tableView.reloadData()
     }
-    private func fillData()
+    private func fillDataFood()
     {
-
-        let plato1 = FoodModel(nameFood: "Arroz con pollo", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.6)
+        let url = URL(string: "")
+        
+        let plato1 = FoodModel(nameFood: "Arroz con pollo", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.6, foodFavorite: true)
         arrayFood.append(plato1)
-        let plato2 = FoodModel(nameFood: "Ají de gallina", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.2)
+        let plato2 = FoodModel(nameFood: "Ají de gallina", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.2, foodFavorite: false)
         arrayFood.append(plato2)
-        let plato3 = FoodModel(nameFood: "Arroz chaufa", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.3)
+        let plato3 = FoodModel(nameFood: "Arroz chaufa", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.3, foodFavorite: true)
         arrayFood.append(plato3)
-        let plato4 = FoodModel(nameFood: "Caldo de gallina", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.0)
+        let plato4 = FoodModel(nameFood: "Caldo de gallina", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.0, foodFavorite: false)
         arrayFood.append(plato4)
-        let plato5 = FoodModel(nameFood: "Rocoto Relleno", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.3)
+        let plato5 = FoodModel(nameFood: "Rocoto Relleno", descriptionFood: "este es un buen plato", recommendation: true, category:"Segundo", score:4.3, foodFavorite: false)
         arrayFood.append(plato5)
     }
 }
