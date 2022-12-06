@@ -16,6 +16,7 @@ class FoodTableViewCell: UITableViewCell {
     }
 
     @IBOutlet private weak var nameFoodCell: UILabel!
+    @IBOutlet private weak var categoryFoodCellLabel: UILabel!
     @IBOutlet private weak var imageFoodCell: UIImageView!
     @IBOutlet private weak var descriptionFoodCellLabel: UILabel!
     @IBOutlet private weak var scoreFoodCellLabel: UILabel!
@@ -30,5 +31,6 @@ class FoodTableViewCell: UITableViewCell {
         nameFoodCell.text = food.nameFood
         descriptionFoodCellLabel.text = food.descriptionFood
         scoreFoodCellLabel.text = String(food.score)
+        categoryFoodCellLabel.text = food.category
     }
 }

@@ -127,6 +127,14 @@
         {
             "nombre":"Entrada",
             "id":3
+        },
+        {
+            "nombre":"Aperitivo",
+            "id":4
+        },
+        {
+            "nombre":"Sopas",
+            "id":5
         }
     ],
     "Users": [{

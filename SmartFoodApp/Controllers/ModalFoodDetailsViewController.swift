@@ -13,15 +13,11 @@ class ModalFoodDetailsViewController: UIViewController {
     @IBOutlet private weak var foodImage: UIImageView!
     @IBOutlet private weak var nameFoodLabel: UILabel!
     @IBOutlet private weak var categoryFoodLabel: UILabel!
-    
-    @IBOutlet weak var saveImgFavoriteButton: UIButton!
+    @IBOutlet private weak var ingredientsTextView: UITextView!
+    @IBOutlet private weak var saveImgFavoriteButton: UIButton!
     var favorite = false
     @IBAction func saveFavoriteButton(_ sender: UIButton) {
-      
             saveImgFavoriteButton.setImage(UIImage( systemName:"heart.fill"), for: .normal)
-     
-    
-        
     }
     var receivedFood: FoodModel = FoodModel()
     
@@ -29,5 +25,6 @@ class ModalFoodDetailsViewController: UIViewController {
         super.viewDidLoad()
         nameFoodLabel.text = receivedFood.nameFood
         categoryFoodLabel.text = receivedFood.category
+        ingredientsTextView.text = receivedFood.ingredients
     }
 }

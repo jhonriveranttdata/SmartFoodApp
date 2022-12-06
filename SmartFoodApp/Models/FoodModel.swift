@@ -7,21 +7,23 @@
 
 import Foundation
 
-struct FoodModel: Codable {
+struct FoodModel {
     var nameFood:String
     var descriptionFood:String
     var recommendation:Bool
     var category:String
     var score:Float
     var foodFavorite: Bool
+    var ingredients:String
     
-    init(nameFood: String, descriptionFood: String, recommendation: Bool, category: String, score: Float, foodFavorite:Bool) {
+    init(nameFood: String, descriptionFood: String, recommendation: Bool, category: String, score: Float, foodFavorite:Bool,ingredients:String) {
         self.nameFood = nameFood
         self.descriptionFood = descriptionFood
         self.recommendation = recommendation
         self.category = category
         self.score = score
         self.foodFavorite = foodFavorite
+        self.ingredients = ingredients
     }
     init(){
         self.nameFood = ""
@@ -30,11 +32,7 @@ struct FoodModel: Codable {
         self.category = ""
         self.score = 0
         self.foodFavorite = false
+        self.ingredients = ""
     }
 }
-extension FoodModel: Identifiable{
-    var id: UUID{
-        let id = UUID()
-        return id
-    }
-}
+
