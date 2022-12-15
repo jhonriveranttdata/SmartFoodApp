@@ -15,8 +15,8 @@ struct FoodModel {
     var score:Float
     var foodFavorite: Bool
     var ingredients:String
-    
-    init(nameFood: String, descriptionFood: String, recommendation: Bool, category: String, score: Float, foodFavorite:Bool,ingredients:String) {
+    var favorite:Bool
+    init(nameFood: String, descriptionFood: String, recommendation: Bool, category: String, score: Float, foodFavorite:Bool,ingredients:String, favorite : Bool) {
         self.nameFood = nameFood
         self.descriptionFood = descriptionFood
         self.recommendation = recommendation
@@ -24,6 +24,7 @@ struct FoodModel {
         self.score = score
         self.foodFavorite = foodFavorite
         self.ingredients = ingredients
+        self.favorite = favorite
     }
     init(){
         self.nameFood = ""
@@ -33,6 +34,7 @@ struct FoodModel {
         self.score = 0
         self.foodFavorite = false
         self.ingredients = ""
+        self.favorite = false
     }
 }
 

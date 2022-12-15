@@ -27,10 +27,22 @@ class FoodTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setupViewCell(food:FoodModel){
-        nameFoodCell.text = food.nameFood
-        descriptionFoodCellLabel.text = food.descriptionFood
-        scoreFoodCellLabel.text = String(food.score)
-        categoryFoodCellLabel.text = food.category
+    func setupViewCell(food:FoodEntity){
+ 
+        DispatchQueue.main.async {
+            let url = URL(string: food.imgName)
+            if let data = try? Data(contentsOf: url!){
+                self.imageFoodCell.image = UIImage(data: data)
+            }
+        }
+        
+       
+ 
+
+        nameFoodCell.text = food.nombre
+        
+        descriptionFoodCellLabel.text = food.dato
+        scoreFoodCellLabel.text = String(food.puntuacion)
+        categoryFoodCellLabel.text = food.categoria
     }
 }

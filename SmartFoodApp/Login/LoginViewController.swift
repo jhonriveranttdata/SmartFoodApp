@@ -1,18 +1,14 @@
 //
-//  HomeViewController.swift
+//  LoginViewController.swift
 //  SmartFoodApp
 //
-//  Created by Jhon Bryan Rivera Mino on 5/12/22.
+//  Created by Jhon Bryan Rivera Mino on 8/12/22.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class LoginViewController: UIViewController {
 
-
-    var sectionCollection = [
-        FoodCollectionSection(sectionType: "Lo más recomendado", imageGallery: ["",""])
-    ]
     override func viewDidLoad() {
         super.viewDidLoad()
 

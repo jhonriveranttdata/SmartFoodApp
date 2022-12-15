@@ -1,0 +1,32 @@
+[
+        {
+            "nombre":"Plato principal",
+            "id":1,
+            "imgName":"https://media.istockphoto.com/id/530419668/es/foto/bistecs-de-carne-de-res-asado-a-la-parrilla-con-esp%C3%A1rragos-y-tomates.jpg?s=612x612&w=0&k=20&c=yKGXr0rVm8m0dvAJYhGHdLKxaIpo-w58hUMgwkgWztY="
+        },
+        {
+            "nombre":"Postre",
+            "id":2,
+            "imgName":"https://s1.eestatic.com/2020/04/19/cocinillas/recetas/postres/azucar-leche-huevo_483712124_150563115_1024x576.jpg"
+        },
+        {
+            "nombre":"Entrada",
+            "id":3,
+            "imgName":"https://uvn-brightspot.s3.amazonaws.com/assets/vixes/3/3_entradas_deliciosas_pero_saludables_que_puedes_darle_a_tus_invitados_si_tienes_una_reunion_en_casa4.jpg"
+        },
+        {
+            "nombre":"Aperitivo",
+            "id":4,
+            "imgName":"https://static2.diariovasco.com/www/multimedia/202205/11/media/cortadas/tapas2-R7HnPFpulG2wq5yhx8bjQDL-624x385@Diario%20Vasco.jpg"
+        },
+        {
+            "nombre":"Sopas",
+            "id":5,
+            "imgName":"https://www.recetasderechupete.com/wp-content/uploads/2021/01/Tipos-de-sopa.jpg"
+        }
+        
+]
+
+       
+ 
+

@@ -1,23 +1,15 @@
-{
-    "Foods": [{
+
+[
+        {
             "id": 1,
             "nombre": "SECO A LA NORTEÑA",
+            "idcategoria":1,
             "categoria": "Plato principal",
             "dato": "El seco a la norteña es uno de los platos bandera de la gastronomía peruana. Una de las recetas que incorpora gran cantidad de insumos nativos los cuales quedan en perfecta combinación con el cabrito, los frejoles y una buena porción de arroz. El secreto de este plato consiste en prepararlo de la manera tradicional marinando la carne en chicha de jora, pero si no cuenta con este insumo aquí te damos todas las recomendación necesarias.",
             "ingredientes": "4 piezas de carne de res, 1 Cebolla grande, 1 crda Ajo molido,2 crdas Aji amarillo molido, 2 crdas Aji especial molido (panca), 1/2 tz Culantro molido, 1 crdita Comino, Sal al gusto, 1/2 crdita Pimienta, 120 g Zapallo loche rallado, Pimienta, Aceite",
-            "recomendacion": "true",
-            "preparacion": [
-                "En una olla agregaremos un chorro de aceite y lo dejamos calentar.",
-                "Una vez caliente ponemos la cebolla finamente picada y dejamos cocinar hasta que tome un tono transparente.",
-                "Seguido agregaremos 1 cucharada de ajo molido y lo sofreiremos por espacio de 2 minutos.",
-                "Ahora ponemos 2 cucharadas de aji amarillo molido y 2 cucharadas de aji espcial panca (ambos sin picante) y dejamos sofreir por 4 minutos.",
-                "Pasado los 4 minutos vamos agregar media taza de culantro molido y dejamos cocinar por 2 minutos.",
-                "Pasado los 2 minutos vamos a sazonar con 1/2 cucharadita de pimienta, 1 cucharadita de comino y una pizca de sal para que tome sabor, dejamos cocinar por otros 4 minutos a fuego medio-bajo.",
-                "Es momento de agregar nuestra carne de res y el zapallo loche rallado, mezlcamos para integrar los insumos. Ahora agregaremos 1/2 taza de agua y dejaremos cocinar a fuego medio-bajo por espacio de 35 minutos.",
-                "Al transcurrir los primero 15 minutos revisamos para corregir la sal y dejamos cocinar los 20 minutos restantes.",
-                "Apagamos la cocina y es momento de emplatar, servimos una porción de arroz cocido, frejoles canarios y sobre ello agregamos nuestro seco a la norteña con una presa por plato."
-            ],
-            "favorite":"true",
+            "recomendacion": true,
+            "preparacion": "En una olla agregaremos un chorro de aceite y lo dejamos calentar.\n Una vez caliente ponemos la cebolla finamente picada y dejamos cocinar hasta que tome un tono transparente.\n Seguido agregaremos 1 cucharada de ajo molido y lo sofreiremos por espacio de 2 minutos.\nAhora ponemos 2 cucharadas de aji amarillo molido y 2 cucharadas de aji espcial panca(ambos sin picante) y dejamos sofreir por 4 minutos.\nPasado los 4 minutos vamos agregar media taza de culantro molido y dejamos cocinar por 2 minutos.\nPasado los 2 minutos vamos a sazonar con 1 / 2 cucharadita de pimienta,1 cucharadita de comino y una pizca de sal para que tome sabor, dejamos cocinar por otros 4 minutos a fuego medio - bajo.\nEs momento de agregar nuestra carne de res y el zapallo loche rallado,mezlcamos para integrar los insumos.Ahora agregaremos 1 / 2 taza de agua y dejaremos cocinar a fuego medio - bajo por espacio de 35 minutos.\nAl transcurrir los primero 15 minutos revisamos para corregir la sal y dejamos cocinar los 20 minutos restantes.\n Apagamos la cocina y es momento de emplatar, servimos una porción de arroz cocido, frejoles canarios y sobre ello agregamos nuestro seco a la norteña con una presa por plato.",
+            "favorite": false,
             "puntuacion": 4.7,
             "imgName": "https://comococinar.pe/wp-content/uploads/2021/06/Seco-a-la-nortena.jpg",
             "historia": "El guiso de seco es un plato de origen Árabe, el cual se remonta a la época de la colonia española. Los españoles fueron los responsables de introducir el cabrito a esta receta al cual se le agregaron insumos nativos peruanos como la chicha de jora, zapallo loche, ajíes, entre otros. El seco a la norteña de carne tiene gran presencia al norte del país, donde provincias como Piura y Lambayeque lo preparan de la manera tradicional, debido a ello la denominación «norteña». Este plato se extiende al litoral peruano y su forma de preparación se adapta reemplazando la chicha de jora y la res por agua y pollo, actualmente lo conocemos como seco de pollo un plato con mucha presencia en la mesa peruana."
@@ -25,23 +17,13 @@
         {
             "id": 2,
             "nombre": "CALDO DE GALLINA",
-            "categoria": "Entrada",
+            "idcategoria":5,
+            "categoria": "Sopas",
             "dato": "El caldo de gallina es uno de los platos bandera de la gastronomía peruana. Este delicioso y nutritivo plato lleva una gran concentración de verduras y gallina debido a su tiempo de preparación. En el Perú ya es costumbre preparar este plato para levantar a los muertos, una forma coloquial de llamar a las personas con resaca después de una gran fiesta.",
             "ingredientes": "1 kg Gallina, 1 kion, 6 ramitas apio, 5 Papa amarilla, 1 Sazonador de gallina, Orégano, 5 Huevos, 200 g Fideos, 1 atado Cebolla china, Canchita tostada",
-            "recomendacion": "true",
-            "preparacion": [
-                "En una olla con agua ponemos las ramitas de apio sin hojas, el kion aplastado para que vote sabor y dejamos hervir.",
-                "Una vez hervido echamos nuestros trozos de gallina y dejamos cocinar por unos 45 minutos para que vote todo el sabor.",
-                "Pasado los 45 minutos vamos a incorporar 3 papas amarillas contadas en piezas medianas y dejamos cocinar por 15 minutos.",
-                "Procedemos a retirar las ramitas de apio.",
-                "Ponemos un poco de sazonador y echamos sal al gusto.",
-                "Vamos a poner nuestras otras 5 papas amarillas cortadas en mitad y dejamos cocinar por 8 minutos.",
-                "Pasado los 8 minutos agregamos el fideo tallarín entero, movemos suavemente hasta sumergirlo por completo, tapamos la olla y apagamos la cocina para que se cocine con el calor de la sopita.",
-                "En un tazón ponemos 3 yemas de huevo y le agregamos 2 cucharones del caldo de gallina, batimos y al instante vamos a echarlo a la sopa moviendo.",
-                "Agregamos el orégano molido",
-                "Vamos a emplatar y lo acompañamos con 1 huevo sancochado por plato y su respectiva canchita tostada."
-            ],
-            "favorite":"true",
+            "recomendacion": true,
+            "preparacion": "En una olla con agua ponemos las ramitas de apio sin hojas,el kion aplastado para que vote sabor y dejamos hervir.\n Una vez hervido echamos nuestros trozos de gallina y dejamos cocinar por unos 45 minutos para que vote todo el sabor.\n Pasado los 45 minutos vamos a incorporar 3 papas amarillas contadas en piezas medianas y dejamos cocinar por 15 minutos.\n Procedemos a retirar las ramitas de apio.\nPonemos un poco de sazonador y echamos sal al gusto.\nVamos a poner nuestras otras 5 papas amarillas cortadas en mitad y dejamos cocinar por 8 minutos.\n Pasado los 8 minutos agregamos el fideo tallarín entero,movemos suavemente hasta sumergirlo por completo,tapamos la olla y apagamos la cocina para que se cocine con el calor de la sopita.\n En un tazón ponemos 3 yemas de huevo y le agregamos 2 cucharones del caldo de gallina,batimos y al instante vamos a echarlo a la sopa moviendo.\nAgregamos el orégano molido\n Vamos a emplatar y lo acompañamos con 1 huevo sancochado por plato y su respectiva canchita tostada.",
+            "favorite": true,
             "puntuacion": 4.7,
             "imgName": "https://comococinar.pe/wp-content/uploads/2021/06/Caldo-de-gallina-1.jpg",
             "historia": "El caldo de gallina es un plato típico de la gastronomía peruana, aunque existen muchas versiones en Latinoamérica. En el Perú tiene presencia en el siglo XIX, mencionadas por el escritor peruano Ricardo Palma, en su obra Verbos y Gerundios. La historia del caldo de gallina se basa en los años 50 donde su venta se daba en la Victoria – La parada, a los trabajadores de puestos y carretilleros. Este plato se presentaba tanto de día como de noche, de día era considerado el levantamuertos para los trabajadores quienes tenían que madrugar a las 3 a.m y comenzar su jornada descargando sacos y cajas de la parada, y a las 6 p.m para contrarrestar el frio."
@@ -49,28 +31,13 @@
         {
             "id": 3,
             "nombre": "PICARONES",
-            "categoria": "Postre",
+            "categoria": "Aperitivo",
+            "idcategoria":4,
             "dato": "Los picarones son uno de los postres típicos de la gastronomía peruana, su consumo se suele dar en el mes de octubre por la celebración del Señor de los Milagros. Una de las fechas donde se intensifica el consumo de dulces peruanos como: Turrones, arroz con leche, mazamorra, arroz zambito y no puede faltar su buena porción de picarones bañado en miel de chancaca. Se caracteriza por tener una superficie semi crujientes y un interior blando que al unirse con la miel desprende una exquisita gama de sabores, sin duda uno de los postres preferidos por toda la familia.",
             "ingredientes": "250 g Chancaca, 1 tz Agua, 1/4 kg Azúcar rubia, 2 ramitas de canela, 1 tz Jugo de naranja, 2 hojas de higos, 5 clavo de olor, 750 g Camote, 1 kg Zapallo, 2 cucharaditas de anís, 60 g Azúcar rubia, 10 g Levadura seca, 650 g Harina sin preparar, 1 tz agua, 1 cda de sal, Aceite",
-            "recomendacion": "true",
-            "preparacion": ["Cortamos en trozos medianos la chancaca y lo ponemos en una olla.",
-                "Echamos 1 taza de agua.",
-                "Agregamos 250 gramos de azúcar rubia, jugo de naranja, 2 hojas de higos, ramitas de canela, clavo de olor y vamos moviendo de vez en cuando hasta que tome una textura como la miel, como paso final colaremos y reservamos la miel.",
-                "Cortamos los camotes en cubos medianos y lo ponemos en una olla, echamos agua hasta cubrirlo y lo dejamos cocinar por 10 minutos.",
-                "Pasado los 10 minutos colamos el camote y reservamos el agua.",
-                "Aplastamos el camote hasta conseguir la textura de puré (Reservamos)",
-                "Cortamos el zapallo en cubos medianos y realizamos el mismo procedimiento que con el camote, de igual manera reservamos el agua y lo hacemos puré (Reservamos)",
-                "Ponemos en un bol 200 ml del agua que reservamos del camote y 100 ml del agua del zapallo (ambos caliente)",
-                "Agregamos 2 cucharadas de anís, 60 gramos de azúcar rubia, 10 gramos de levadura e integramos todo.",
-                "Una vez integrado vamos a echar 500 gramos del puré de zapallo que preparamos y 300 gramos del puré de camote que hicimos.",
-                "Mezclamos y ponemos 650 gramos de harina sin preparar, vamos a mezclar con la mano por unos 5 minutos hasta tener todo bien compacto. Tapamos nuestra mezcla y la dejamos reposar a temperatura ambiente por 2 horas.",
-                "Una vez pasada las 2 horas, vamos a seguir amasando por unos 5 minutos hasta tener una textura ideal. Tapamos nuevamente y dejamos reposar 2 horas más (Reservar)",
-                "En un bol ponemos una taza de agua con 1 cucharada de sal, esto es para meter los dedos y evitar que la masa se nos pegue a la mano.",
-                "Tomamos un poco de masa que preparamos y vamos formando un aro, lo echamos con cuidado sobre el aceite caliente (abundante aceite que cubra toda la masa) y con la ayuda en un palito vamos moviendo desde el centro de nuestra masa para dar la forma.",
-                "Retiramos y buen provecho.",
-                "Lo acompañamos con la miel de chancaca preparada."
-            ],
-            "favorite":"true",
+            "recomendacion": true,
+            "preparacion": "Cortamos en trozos medianos la chancaca y lo ponemos en una olla.\nEchamos 1 taza de agua.\nAgregamos 250 gramos de azúcar rubia, jugo de naranja, 2 hojas de higos, ramitas de canela, clavo de olor y vamos moviendo de vez en cuando hasta que tome una textura como la miel, como paso final colaremos y reservamos la miel.\nCortamos los camotes en cubos medianos y lo ponemos en una olla, echamos agua hasta cubrirlo y lo dejamos cocinar por 10 minutos.\nPasado los 10 minutos colamos el camote y reservamos el agua.\nAplastamos el camote hasta conseguir la textura de puré (Reservamos)\nCortamos el zapallo en cubos medianos y realizamos el mismo procedimiento que con el camote, de igual manera reservamos el agua y lo hacemos puré (Reservamos)\nPonemos en un bol 200 ml del agua que reservamos del camote y 100 ml del agua del zapallo (ambos caliente)\nAgregamos 2 cucharadas de anís, 60 gramos de azúcar rubia, 10 gramos de levadura e integramos todo.\nUna vez integrado vamos a echar 500 gramos del puré de zapallo que preparamos y 300 gramos del puré de camote que hicimos.\nMezclamos y ponemos 650 gramos de harina sin preparar, vamos a mezclar con la mano por unos 5 minutos hasta tener todo bien compacto. Tapamos nuestra mezcla y la dejamos reposar a temperatura ambiente por 2 horas.\nUna vez pasada las 2 horas, vamos a seguir amasando por unos 5 minutos hasta tener una textura ideal. Tapamos nuevamente y dejamos reposar 2 horas más (Reservar)\nEn un bol ponemos una taza de agua con 1 cucharada de sal, esto es para meter los dedos y evitar que la masa se nos pegue a la mano.\nTomamos un poco de masa que preparamos y vamos formando un aro, lo echamos con cuidado sobre el aceite caliente (abundante aceite que cubra toda la masa) y con la ayuda en un palito vamos moviendo desde el centro de nuestra masa para dar la forma.\nRetiramos y buen provecho.\nLo acompañamos con la miel de chancaca preparada.",
+            "favorite": true,
             "puntuacion": 4.7,
             "imgName": "https://comococinar.pe/wp-content/uploads/2021/06/Picarones.jpg",
             "historia": "Los picarones son uno de los postres insignia de la gastronomía peruana. Su origen esta presente en la época inca donde parte de su alimentación era a base de camote y zapallo. Ya con la llegada de los españoles a tierra Inca se agregaron insumos como la harina y la miel, también se da una presentación distinta con el clásico agujero en el centro. El sabor, la presentación y el aroma causo furor y provoco que no solo lo preparasen para consumo propio, sino también,  para vender fuera de las iglesias realizando canticos a este.La receta de picarones en la actualidad mantiene los productos base como el comote, zapallo y chancaca en su preparación. Un postre que podemos encontrar en puestos carretilleros preparándolos en el mismo momento."
@@ -78,21 +45,13 @@
         {
             "id": 4,
             "nombre": "ARROZ CHAUFA",
+            "idcategoria":1,
             "categoria": "Plato principal",
             "dato": "El arroz chaufa es uno de los platos que se supo ganar el aprecio de todos los peruanos, este consiste en la combinación de la gastronomía china-peruana, resultando de una mezcla de especias orientales y productos peruanos nativos. ¿Te sobro arroz de ayer?, ideal para ser usado en un buen chaufa, el secreto de todo maestro chaufero, ¿Quieres otro secreto?, lo dejamos en los tips y recomendación.",
             "ingredientes": "5 tz arroz cocido, 2 pechugas de pollo, 1 cda ajo molido, Sillao, 1 cdta pimienta, Aceite, ½ unidad de kion, 2 huevos, 1 cda salsa de ostión, 1 puñado de cebolla china, Sal al gusto",
-            "recomendacion": "true",
-            "preparacion": ["Vamos a cortar las pechugas de pollo en cubitos de 2 centímetros y lo ponemos en un bol, ahora lo sazonaremos con un poco de sal, una cucharada de ajo molido, pimienta y agregaremos 2 cucharadas de sillao, dejamos macerar por espacio de 10 minutos.",
-                "Echamos un chorro de aceite en una sartén o wok y dejamos calentar.",
-                "Ahora pondremos medio kion rallado y lo sofreímos por solo 1 minuto.",
-                "Vamos a poner los 2 huevos batidos y lo freiremos muy bien, seguido retiramos el huevo y lo cortamos en trozos medianos (reservamos)",
-                "En la misma sartén agregamos 1 chorro de aceite y la dejamos calentar.",
-                "Una vez caliente vamos a poner el pollo macerado y lo dejamos freír por espacio de 5 minutos.",
-                "Pasado los 5 minutos vamos agregar el arroz, levantamos el fuego y vamos a ir salteando para lograr freír el arroz levemente esto lo haremos por solo 15 segundos.",
-                "Ahora vamos a darle un poco de color con 1 chorrito de sillao y una cucharada de salsa de ostión, sofreímos salteando los insumos.",
-                "También incorporaremos el huevo picado y un puñado de cebolla china picada en trozos medianos, mezclamos y dejamos cocinar por un par de minutos."
-            ],
-            "favorite":"true",
+            "recomendacion": true,
+            "preparacion": "Vamos a cortar las pechugas de pollo en cubitos de 2 centímetros y lo ponemos en un bol, ahora lo sazonaremos con un poco de sal, una cucharada de ajo molido, pimienta y agregaremos 2,cucharadas de sillao, dejamos macerar por espacio de 10 minutos.\n Echamos un chorro de aceite en una sartén o wok y dejamos calentar.\n Ahora pondremos medio kion rallado y lo sofreímos por solo 1 minuto.\n Vamos a poner los 2 huevos batidos y lo freiremos muy bien, seguido retiramos el huevo y lo cortamos en trozos medianos(reservamos)\n En la misma sartén agregamos 1 chorro de aceite y la dejamos calentar.\n Una vez caliente vamos a poner el pollo macerado y lo dejamos freír por espacio de 5 minutos.\n Pasado los 5 minutos vamos agregar el arroz, levantamos el fuego y vamos a ir salteando para lograr freír el arroz levemente esto lo haremos por solo 15 segundos.\n Ahora vamos a darle un poco de color con 1 chorrito de sillao y una cucharada de salsa de ostión, sofreímos salteando los insumos.\n También incorporaremos el huevo picado y un puñado de cebolla china picada en trozos medianos, mezclamos y dejamos cocinar por un par de minutos. ",
+            "favorite": true,
             "puntuacion": 4.7,
             "imgName": "https://comococinar.pe/wp-content/uploads/2021/06/Arroz-chaufa-1.jpg",
             "historia": "El origen de arroz chaufa se da a mediados del siglo XIX con la llegada de inmigrantes chinos al Perú, los cuales era llamados culies, estos desempeñaban todo tipo de labores y tiempo después algunos comenzaron abriendo lugares de comida donde ofrecían sus platos tradicionales en base al arroz agregando especias orientales e insumos peruanos.Uno de los platos más consumidos era el arroz frito el cual en cantones se llamaba choafan, con el pasar del tiempo y debido a una difícil pronunciación se origina la palabra chaufa. Hoy en día los chifas comparten la mezcla de la gastronomía orienta-peruana muy bien aceptada por locales quienes en un solo plato pueden degustan especias chinas y productos nativos. El arroz chaufa es uno de los platos que tiene una gran adaptación de sabores ya que podemos encontrar arroz chaufa de pollo, carne, mariscos, quinua entre otros."
@@ -100,56 +59,18 @@
         {
             "id": 5,
             "nombre": "ARROZ CON LECHE",
+            "idcategoria":2,
             "categoria": "Postre",
             "dato": "El arroz con leche es uno de los postres insignia de la gastronomía peruana, como sabrán el Perú se considera un país arrocero ya que todos los días los guisos y frituras son acompañados con arroz, por ello no podía faltar un postre a base de arroz. Este postre consiste en preparar el arroz a fuego medio bajo acompañado de leche y otros insumos que realzan el sabor, como resultado tendremos unos granos semi pasta de arroz dulce que será el favorito de grandes y pequeños en casa.",
             "ingredientes": "150 g Arroz, 1 Lata de leche evaporada,1 Lata de leche condensada, 50 g Pasas, 120 g Azúcar rubia, Cascara de naranja (Eliminar parte blanca), Ramitas de canela entera, 4 Clavos de olor, 1 cda Coco rallado (opcional), Esencia de vainilla, 850 ml Agua , Canela molida",
-            "recomendacion": "true",
-            "preparacion": ["Ponemos el agua a hervir en una olla, cuando ya está hirviendo vamos a poner la canela, el clavo de olor, la cascara de naranja y vamos agregar el arroz lavado, movemos y dejamos a cocinar entre 10 a 12 minutos.",
-                "Pasado el tiempo, retiramos la cascara de naranja, las canelas, los clavos de olor.",
-                "Vamos a echar los 120 gramos de azúcar, también ponemos las pasas lavadas y movemos suavemente. Tapamos y dejamos unos 5 minutos a fuego medio.",
-                "Vamos a mover suavemente y vamos echando la leche evaporada, vamos moviendo para evitar que se pegue y se queme nuestro postre.",
-                "Echamos unas gotitas de vainilla (solo poco)",
-                "Vamos a echar la leche condensada realizando movimientos suaves.",
-                "Tapamos y dejamos unos 4 minutitos a fuego bajo.",
-                "Agregamos coco rallado (opcional)",
-                "Apagamos la cocina y seguimos moviendo."
-            ],
-            "favorite":"true",
+            "recomendacion": true,
+            "preparacion": "Ponemos el agua a hervir en una olla, cuando ya está hirviendo vamos a poner la canela, el clavo de olor, la cascara de naranja y vamos agregar el arroz lavado, movemos y dejamos a cocinar entre 10 a 12 minutos.\nPasado el tiempo,retiramos la cascara de naranja,las canelas,los clavos de olor.\nVamos a echar los 120 gramos de azúcar,también ponemos las pasas lavadas y movemos suavemente.Tapamos y dejamos unos 5 minutos a fuego medio.\nVamos a mover suavemente y vamos echando la leche evaporada,vamos moviendo para evitar que se pegue y se queme nuestro postre.\nEchamos unas gotitas de vainilla(solo poco).\nVamos a echar la leche condensada realizando movimientos suaves.\nTapamos y dejamos unos 4 minutitos a fuego bajo.\nAgregamos coco rallado(opcional)\n,Apagamos la cocina y seguimos moviendo.",
+            "favorite": false,
             "puntuacion": 4.7,
             "imgName": "https://comococinar.pe/wp-content/uploads/2021/06/Arroz-con-leche.jpg",
             "historia": "El arroz con leche tiene orígenes en Asia, posteriormente se fueron difundiendo tanto en Europa como África. Este postre también se menciona en las Tradiciones Peruanas por Ricardo Palma con la historia de un fraile libertino en los años 1951, donde se le invita a celebrar al amigo moribundo, la cita es la siguiente:  “¡Qué diablos, hombre! Vengo por tí para llevarte a una parranda, donde hay muchachas de arroz con leche y canela”. En el Perú se convirtió en el preferido de la población por su saborcito incomparable, además que es un postre que no solo se come caliente, sino también queda muy bueno en frio. Hace poco compre este delicioso postre en San Bartolo – Lima – Perú, una señora en carretilla quien vendía la clásica mazamorra morada con arroz con leche y una alternativa espectacular arroz zambito."
         }
-    ],
-    "categoria":[
-        {
-            "nombre":"Plato principal",
-            "id":1
-        },
-        {
-            "nombre":"Postre",
-            "id":2
-        },
-        {
-            "nombre":"Entrada",
-            "id":3
-        },
-        {
-            "nombre":"Aperitivo",
-            "id":4
-        },
-        {
-            "nombre":"Sopas",
-            "id":5
-        }
-    ],
-    "Users": [{
-        "id": 1,
-        "nombre": "Jhon",
-        "apeliido": "Rivera",
-        "usuario": "jrivera",
-        "contrasena": "admin123",
-        "avatar": "https://media-exp1.licdn.com/dms/image/D4E03AQH0RWWTBSVuvg/profile-displayphoto-shrink_800_800/0/1648913709486?e=1675900800&v=beta&t=kXmBEgGZ1l8mv_ye5EP1fxkxH08kS8bFlGJShuXiki8"
-    }],
-    "Sections":[
-    "Recomendados", "Favoritos","Puntuación alta"]
-}
+    ]
+
+
+
