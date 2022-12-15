@@ -15,8 +15,9 @@ class DateFoodViewController: UIViewController {
     @IBOutlet weak var dateNotiFood: UIDatePicker!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBAction private func registerButton(_ sender: Any) {
-        getValuesDatePicker(date: dateNotiFood)
-        createNotification(date: dateNotiFood)
+        //getValuesDatePicker(date: dateNotiFood)
+        presenter?.createNotification(date: dateNotiFood)
+        //createNotification(date: dateNotiFood)
         dismiss(animated: true)
     }
     override func viewDidLoad() {
@@ -25,7 +26,7 @@ class DateFoodViewController: UIViewController {
         foodDatePicker.preferredDatePickerStyle = .inline
     }
 }
-
+/*
 func notificacionSettingsContent() -> UNMutableNotificationContent{
     let content = UNMutableNotificationContent()
     content.title = "¡Hola! Llegó el momento de iniciar"
@@ -62,7 +63,7 @@ func createNotification(date :UIDatePicker){
             }
         }
     }
-}
+}*/
 
 let arrayDateFood :[DateFood] = []
 func getValuesDatePicker(date :UIDatePicker){

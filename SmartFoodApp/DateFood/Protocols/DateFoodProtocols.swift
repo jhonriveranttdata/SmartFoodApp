@@ -10,6 +10,7 @@ import UIKit
 
 protocol DateFoodPresenterProtocol{
     var arrayFood: FoodEntity{get}
+    func createNotification(date :UIDatePicker)
 }
 protocol DateFoodRouterProtocol{
     func dismiss()
