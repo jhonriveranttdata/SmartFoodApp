@@ -18,7 +18,8 @@ class HomeRouter{
 }
 
 extension HomeRouter : HomeRouterProtocol{
-    func presetCategory(_ category: CategoryEntity,_ listFood : [FoodEntity]){
+    
+    func presetCategory(_ category: CategoryEntity?,_ listFood : [FoodEntity]){
         listConfigurator = ListFoodConfgurator()
         let listFoodViewController = listConfigurator!.makeListFood(category, listFood)
         view?.navigationController?.pushViewController(listFoodViewController, animated: true)

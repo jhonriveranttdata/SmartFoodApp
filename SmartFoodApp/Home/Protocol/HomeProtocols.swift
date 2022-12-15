@@ -19,7 +19,7 @@ protocol HomePresenterProtocol{
     func getDataCategory(_ category : [CategoryEntity])
     func getDataFood(_ food: [FoodEntity])
     func obtenerData()
-    func showCategorySelected(_ category: CategoryEntity,_ listFood: [FoodEntity])
+    func showCategorySelected(_ category: CategoryEntity?,_ listFood: [FoodEntity])
 }
 //interactor -> presenter
 protocol HomeInteractorProtocol{
@@ -29,7 +29,7 @@ protocol HomeInteractorProtocol{
 }
 //router -> presenter
 protocol HomeRouterProtocol{
-    func presetCategory(_ category: CategoryEntity,_ listFood: [FoodEntity])
+    func presetCategory(_ category: CategoryEntity?,_ listFood: [FoodEntity])
 }
 
 protocol HomeRemoteRepositoryProtocol{

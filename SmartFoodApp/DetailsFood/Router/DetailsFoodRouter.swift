@@ -11,6 +11,8 @@ import UIKit
 class DetailsFoodRouter{
     var presenter : DetailsFoodPresenterProtocol?
     var dateFoodConfigurator: DateFoodConfigurator?
+    var preparationFoodConfigurator: PreparationFoodConfigurator?
+    
     var view: UIViewController?
     //var delegate: DetailsFoodConfiguratorDelegate
     
@@ -23,5 +25,10 @@ extension DetailsFoodRouter : DetailsFoodRouterProtocol{
         dateFoodConfigurator = DateFoodConfigurator()
         let  dateFoodViewController = dateFoodConfigurator!.make(food)
         view?.present(dateFoodViewController, animated: true)
+    }
+    func presetFoodPreparation(_ food: FoodEntity){
+        preparationFoodConfigurator = PreparationFoodConfigurator()
+        let preparationController = preparationFoodConfigurator!.make(food)
+        view?.present(preparationController, animated: true)
     }
 }

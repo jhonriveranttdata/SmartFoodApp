@@ -14,12 +14,11 @@ protocol ListFoodViewProtocol{
 }
 //Presenter -> View
 protocol ListFoodPresenterProtocol{
-    var arrayCategory: CategoryEntity {get}
+    var arrayCategory: CategoryEntity? {get}
     var arrayFood: [FoodEntity] {get}
     func filterCategory()-> [FoodEntity]
     var food : [FoodEntity]{get}
-    //func getDataFood(_ foods: [FoodEntity])
-    //func obtenerData()
+
     func showFoodSelected(_ food: FoodEntity)
 }
 //Router -> Presenter

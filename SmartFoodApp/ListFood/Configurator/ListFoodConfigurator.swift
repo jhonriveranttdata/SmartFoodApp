@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 class ListFoodConfgurator{
     
-    func makeListFood(_ item: CategoryEntity,_ itemFood: [FoodEntity])-> UIViewController{
+    func makeListFood(_ item: CategoryEntity?,_ itemFood: [FoodEntity])-> UIViewController{
          let presenter = ListFoodPresenter(itemCategory: item, listFood: itemFood)
         //let api = FoodMocksAPI()
         //var cat = item.nombre

@@ -21,5 +21,9 @@ extension DetailsFoodPresenter: DetailsFoodPresenterProtocol{
     }
     func showFoodDate(_ food: FoodEntity){
         router?.presentFoodDate(food)
+        
+    }
+    func showFoodPreparation(_ food: FoodEntity){
+        router?.presetFoodPreparation(food)
     }
 }

@@ -17,6 +17,14 @@ class ModalFoodDetailsViewController: UIViewController {
     @IBOutlet private weak var saveImgFavoriteButton: UIButton!
     
     var favorite = false
+    
+    
+    @IBAction func initPreparation(_ sender: UIButton) {
+        guard let food = presenter?.arrayFood else { return }
+        presenter?.showFoodPreparation(food)
+    }
+    
+    
     @IBAction func notificationButton(_ sender: UIButton) {
         guard let food = presenter?.arrayFood else { return }
         presenter?.showFoodDate(food)
@@ -25,6 +33,8 @@ class ModalFoodDetailsViewController: UIViewController {
        
             saveImgFavoriteButton.setImage(UIImage( systemName:"heart.fill"), for: .normal)
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let str = presenter?.arrayFood.imgName

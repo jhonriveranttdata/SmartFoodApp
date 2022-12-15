@@ -10,13 +10,12 @@ import UIKit
 class ListFoodPresenter {
     //MARK: PROPIEDADES
     
-    private let itemCategory: CategoryEntity
+    private let itemCategory: CategoryEntity?
     private let listFood: [FoodEntity]
     var router : ListFoodRouterProtocol?
     var view : ListFoodViewProtocol?
-    //var interactor : ListFoodInteractorProtocol?
     
-    required init(itemCategory: CategoryEntity, listFood: [FoodEntity]) {
+    required init(itemCategory: CategoryEntity?, listFood: [FoodEntity]) {
         self.itemCategory = itemCategory
         self.listFood = listFood
     }
@@ -24,18 +23,23 @@ class ListFoodPresenter {
 
 //MARK: MÉTODOS DE PROTOCOLOS PARA LA VISTA
 extension ListFoodPresenter : ListFoodPresenterProtocol{
-    var arrayCategory: CategoryEntity{
-        print(itemCategory.nombre)
+    var arrayCategory: CategoryEntity?{
         return itemCategory
     }
     var arrayFood: [FoodEntity]{
         return listFood
     }
-    //var foodArrayFiltered: [FoodEntity]
+
     func filterCategory()-> [FoodEntity]{
-        let filter = listFood.filter{$0.idcategoria == itemCategory.id}
-        view?.searchData(filter)
-        return filter
+        if itemCategory != nil {
+            let filter = listFood.filter{$0.idcategoria == itemCategory?.id}
+            view?.searchData(filter)
+            return filter
+        }else{
+            let filter = listFood
+            view?.searchData(filter)
+            return filter
+        }
     }
     var food : [FoodEntity]{
         return filterCategory()
