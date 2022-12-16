@@ -9,16 +9,21 @@ import Foundation
 import UIKit
 class ListFoodPresenter {
     //MARK: PROPIEDADES
-    
     private let itemCategory: CategoryEntity?
-    private let listFood: [FoodEntity]
+    private var listFood: [FoodEntity]
+    private var foodArrayFiltered :[FoodEntity]
+   // private var listFoodArray: [FoodEntity]
+    private var backupFoodArray: [FoodEntity]
     var router : ListFoodRouterProtocol?
     var view : ListFoodViewProtocol?
     
-    required init(itemCategory: CategoryEntity?, listFood: [FoodEntity]) {
+    required init(itemCategory: CategoryEntity?, listFood: [FoodEntity], foodArrayFiltered:[FoodEntity],backupFoodArray : [FoodEntity] ) {
         self.itemCategory = itemCategory
         self.listFood = listFood
+        self.foodArrayFiltered = foodArrayFiltered
+        self.backupFoodArray = backupFoodArray
     }
+
 }
 
 //MARK: MÉTODOS DE PROTOCOLOS PARA LA VISTA
@@ -29,7 +34,9 @@ extension ListFoodPresenter : ListFoodPresenterProtocol{
     var arrayFood: [FoodEntity]{
         return listFood
     }
-
+    var food : [FoodEntity]{
+        return filterCategory()
+    }
     func filterCategory()-> [FoodEntity]{
         if itemCategory != nil {
             let filter = listFood.filter{$0.idcategoria == itemCategory?.id}
@@ -41,46 +48,31 @@ extension ListFoodPresenter : ListFoodPresenterProtocol{
             return filter
         }
     }
-    var food : [FoodEntity]{
-        return filterCategory()
-    }
+    
     func showFoodSelected(_ food: FoodEntity){
         router?.presetFoodDetail(food)
     }
-  /*  func filterCategory(){
-        
-    }
-
-    func obtenerData(){
-       // interactor?.getDataFood()
+  /*
+    func search(_ searchTextField: UITextField){
+        searchTextField.addTarget(self, action: #selector(self.searchTextField), for: .editingChanged)
     }
     
-    func getDataFood(_ foods: [FoodEntity]) {
-       // view?.showFoods(foods)
-    }*/
-    
-    /*
-    func searchTextField(_ searchFoodTextField: UITextField ){
-        searchFoodTextField.addTarget(self, action:#selector(searchTextFieldFn), for: .editingChanged)
+    @objc func searchTextFieldFn(_ textField: UITextField, _ searchTextField: UITextField ) {
+        if textField == searchTextField {
+            let text = textField.text ?? ""
+            
+            listFood.forEach({ value in
+                if value.nombre.lowercased().contains(text.lowercased()){
+                    foodArrayFiltered.append(value)
+                }
+            })
+            
+            listFood = (text.count > 0) ? foodArrayFiltered : backupFoodArray
+            print(listFood)
+            //petsTableView.reloadData()
+        }
     }
-    @objc func searchTextFieldFn(_ searchFoodTextField: UITextField, _ searchingFood: Bool){
-          foodArrayFiltered.removeAll()
-        let searchData: Int = searchFoodTextField.text!.count
-          if searchData != 0 {
-              searchingFood = true
-              for food in arrayFood{
-                  if let searchToFood = searchFoodTextField.text{
-                      let range = listFood.nameFood.range(of: searchToFood, options: .caseInsensitive)
-                      if range != nil{
-                          foodArrayFiltered.append(food)
-                      }
-                  }
-              }
-          }else{
-              foodArrayFiltered = arrayFood
-              searchingFood = false
-          }
-              tableView.reloadData()
-      }
-     */
+    */
+    
+    
 }

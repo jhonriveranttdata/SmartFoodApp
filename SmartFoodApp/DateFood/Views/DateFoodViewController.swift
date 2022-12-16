@@ -27,50 +27,50 @@ class DateFoodViewController: UIViewController {
     }
 }
 /*
-func notificacionSettingsContent() -> UNMutableNotificationContent{
-    let content = UNMutableNotificationContent()
-    content.title = "¡Hola! Llegó el momento de iniciar"
-    content.body = "Tienes planeado preparar Nombre del plato"
-    content.sound = .default
-    content.badge = 0
-    return content
-}
-
-func createNotification(date :UIDatePicker){
-    let notificationFood = UNUserNotificationCenter.current()
-    notificationFood.getNotificationSettings{ settings in
-        guard (settings.authorizationStatus == .authorized) || (settings.authorizationStatus == .provisional) else { return }
-        DispatchQueue.main.async {
-            let components = Calendar.current.dateComponents([.day, .month, .year, .hour, .minute], from: date.date)
-            let id = components.minute
-            if settings.alertSetting == .enabled {
-                let content = notificacionSettingsContent()
-                let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
-                let request = UNNotificationRequest(identifier: "es un \(String(describing: id))", content: content, trigger: trigger)
-                notificationFood.add(request){ (error) in
-                    print("Error \(error?.localizedDescription ?? "")")
-                }
-            } else {
-                notificationFood.requestAuthorization(options: [.alert, .sound, .badge]) { (allowed, error ) in
-                    allowed == true ? print("Permision Granted") : print("Error Occured or Permision Not Granted")
-                }
-                let content = notificacionSettingsContent()
-                let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
-                let request = UNNotificationRequest(identifier: "es un \(String(describing: id))", content: content, trigger: trigger)
-                notificationFood.add(request){ (error) in
-                    print("Error \(error?.localizedDescription ?? "")")
-                }
-            }
-        }
-    }
-}*/
+ func notificacionSettingsContent() -> UNMutableNotificationContent{
+ let content = UNMutableNotificationContent()
+ content.title = "¡Hola! Llegó el momento de iniciar"
+ content.body = "Tienes planeado preparar Nombre del plato"
+ content.sound = .default
+ content.badge = 0
+ return content
+ }
+ 
+ func createNotification(date :UIDatePicker){
+ let notificationFood = UNUserNotificationCenter.current()
+ notificationFood.getNotificationSettings{ settings in
+ guard (settings.authorizationStatus == .authorized) || (settings.authorizationStatus == .provisional) else { return }
+ DispatchQueue.main.async {
+ let components = Calendar.current.dateComponents([.day, .month, .year, .hour, .minute], from: date.date)
+ let id = components.minute
+ if settings.alertSetting == .enabled {
+ let content = notificacionSettingsContent()
+ let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+ let request = UNNotificationRequest(identifier: "es un \(String(describing: id))", content: content, trigger: trigger)
+ notificationFood.add(request){ (error) in
+ print("Error \(error?.localizedDescription ?? "")")
+ }
+ } else {
+ notificationFood.requestAuthorization(options: [.alert, .sound, .badge]) { (allowed, error ) in
+ allowed == true ? print("Permision Granted") : print("Error Occured or Permision Not Granted")
+ }
+ let content = notificacionSettingsContent()
+ let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+ let request = UNNotificationRequest(identifier: "es un \(String(describing: id))", content: content, trigger: trigger)
+ notificationFood.add(request){ (error) in
+ print("Error \(error?.localizedDescription ?? "")")
+ }
+ }
+ }
+ }
+ }*/
 
 let arrayDateFood :[DateFood] = []
 func getValuesDatePicker(date :UIDatePicker){
     let calendar = Calendar.current
     let components = calendar.dateComponents([.day, .month, .year, .hour, .minute], from: date.date)
     if let day = components.day, let month = components.month, let year = components.year,
-        let hours = components.hour, let minutes = components.minute{
+       let hours = components.hour, let minutes = components.minute{
         let dayString = String(day)
         let monthString = String(month)
         let yearString = String(year)
@@ -84,16 +84,16 @@ func getValuesDatePicker(date :UIDatePicker){
     }
 }
 /*
-extension DateFoodViewController: SendDetailsFoodToDateDelegate{
-    func SendDetailsFoodToDate(didDescription description: String) {
-        descriptionTextView.text = description
-    }
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return true
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination =  storyboard?.instantiateViewController(withIdentifier: "ModalFoodDetailsViewController") as?
-        ModalFoodDetailsViewController
-        destination?.delegate = self
-    }
-}*/
+ extension DateFoodViewController: SendDetailsFoodToDateDelegate{
+ func SendDetailsFoodToDate(didDescription description: String) {
+ descriptionTextView.text = description
+ }
+ override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+ return true
+ }
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ let destination =  storyboard?.instantiateViewController(withIdentifier: "ModalFoodDetailsViewController") as?
+ ModalFoodDetailsViewController
+ destination?.delegate = self
+ }
+ }*/

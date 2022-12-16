@@ -7,7 +7,9 @@
 
 import Foundation
 import UIKit
+
 class DetailsFoodConfigurator {
+    
     func make(_ item: FoodEntity) -> UIViewController {
         let presenter = DetailsFoodPresenter(itemDetail: item)
         let storyboard  = UIStoryboard(name: "Main", bundle: nil)
@@ -17,7 +19,6 @@ class DetailsFoodConfigurator {
         router.presenter = presenter
         router.view = view
         presenter.router = router
-        
         return view
     }
 }

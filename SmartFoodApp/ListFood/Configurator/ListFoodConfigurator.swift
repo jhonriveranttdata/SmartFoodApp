@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 class ListFoodConfgurator{
     
-    func makeListFood(_ item: CategoryEntity?,_ itemFood: [FoodEntity])-> UIViewController{
-         let presenter = ListFoodPresenter(itemCategory: item, listFood: itemFood)
+    func makeListFood(_ item: CategoryEntity?,_ itemFood: [FoodEntity] )-> UIViewController{
+        let presenter = ListFoodPresenter(itemCategory: item, listFood: itemFood,foodArrayFiltered:itemFood ,backupFoodArray :itemFood)
         //let api = FoodMocksAPI()
         //var cat = item.nombre
        // let interactor = ListFoodInteractor(presenter: presenter, api: api)

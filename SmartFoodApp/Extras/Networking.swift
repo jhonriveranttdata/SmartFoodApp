@@ -6,9 +6,9 @@
 //
 
 import Foundation
-/*
-class FoodMocksAPI: ListFoodRemoteRepositoryProtocol {
-/*
+
+class FoodMocksAPI : HomeRemoteRepositoryProtocol{
+    
     func FetchFoods() -> [FoodResponse]{
         let resources = "FoodResponse"
         if let url = Bundle.main.url(forResource: resources, withExtension: "json"){
@@ -22,26 +22,7 @@ class FoodMocksAPI: ListFoodRemoteRepositoryProtocol {
                 print(error.localizedDescription)
             }
         }
-            return []
-    }
- */
-}*/
-class FoodMocksAPI : HomeRemoteRepositoryProtocol{
-
-   func FetchFoods() -> [FoodResponse]{
-        let resources = "FoodResponse"
-        if let url = Bundle.main.url(forResource: resources, withExtension: "json"){
-            do{
-                let data = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                let result = try decoder.decode([FoodResponse].self, from: data)
-                print(result)
-                return result
-            }catch let error {
-                print(error.localizedDescription)
-            }
-        }
-            return []
+        return []
     }
     
     func FetchCategoryFoods() -> [CategoryFoods]{
@@ -57,7 +38,7 @@ class FoodMocksAPI : HomeRemoteRepositoryProtocol{
                 print(error.localizedDescription)
             }
         }
-            return []
+        return []
     }
     
     func FetchUser() -> [UserResponse]{
@@ -72,6 +53,6 @@ class FoodMocksAPI : HomeRemoteRepositoryProtocol{
                 print(error.localizedDescription)
             }
         }
-            return []
+        return []
     }
 }

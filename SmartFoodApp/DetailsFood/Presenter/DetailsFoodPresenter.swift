@@ -13,7 +13,7 @@ class DetailsFoodPresenter{
     required init(itemDetail: FoodEntity) {
         self.itemDetail = itemDetail
     }
-
+    
 }
 extension DetailsFoodPresenter: DetailsFoodPresenterProtocol{
     var arrayFood: FoodEntity {

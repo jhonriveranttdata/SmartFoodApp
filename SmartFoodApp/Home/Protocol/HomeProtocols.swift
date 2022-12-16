@@ -11,7 +11,7 @@ protocol HomeViewProtocol{
     func showUser(_ user: [UserEntity])
     func showCategory(_ category: [CategoryEntity])
     func showFood(_ food: [FoodEntity])
-
+    
 }
 //Presenter -> View
 protocol HomePresenterProtocol{

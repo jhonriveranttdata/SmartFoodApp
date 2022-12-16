@@ -18,7 +18,6 @@
 		A041F17C294773700012C2AC /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F17B294773700012C2AC /* HomeInteractor.swift */; };
 		A041F1802947740B0012C2AC /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F17F2947740B0012C2AC /* HomeConfigurator.swift */; };
 		A041F1D62947BF4C0012C2AC /* FoodEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F1D52947BF4B0012C2AC /* FoodEntity.swift */; };
-		A041F1D82947BF690012C2AC /* ListFoodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F1D72947BF690012C2AC /* ListFoodInteractor.swift */; };
 		A041F1DA2947BFB10012C2AC /* ListFoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F1D92947BFB10012C2AC /* ListFoodPresenter.swift */; };
 		A041F1DD2947C0370012C2AC /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F1DC2947C0370012C2AC /* Networking.swift */; };
 		A041F1E22947C0870012C2AC /* FoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F1E12947C0870012C2AC /* FoodResponse.swift */; };
@@ -38,7 +37,6 @@
 		A041F27E294A21940012C2AC /* DateFoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F27D294A21940012C2AC /* DateFoodPresenter.swift */; };
 		A041F280294A21A60012C2AC /* DateFoodRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F27F294A21A60012C2AC /* DateFoodRouter.swift */; };
 		A041F282294A21B60012C2AC /* DateFoodConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F281294A21B60012C2AC /* DateFoodConfigurator.swift */; };
-		A041F284294A2AC00012C2AC /* FoodDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F283294A2AC00012C2AC /* FoodDate.swift */; };
 		A041F286294A43C60012C2AC /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = A041F285294A43C60012C2AC /* User.json */; };
 		A041F288294A43FF0012C2AC /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F287294A43FF0012C2AC /* UserResponse.swift */; };
 		A041F28A294A46950012C2AC /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041F289294A46950012C2AC /* UserEntity.swift */; };
@@ -74,7 +72,6 @@
 		A041F17B294773700012C2AC /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		A041F17F2947740B0012C2AC /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		A041F1D52947BF4B0012C2AC /* FoodEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntity.swift; sourceTree = "<group>"; };
-		A041F1D72947BF690012C2AC /* ListFoodInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodInteractor.swift; sourceTree = "<group>"; };
 		A041F1D92947BFB10012C2AC /* ListFoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodPresenter.swift; sourceTree = "<group>"; };
 		A041F1DC2947C0370012C2AC /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		A041F1E12947C0870012C2AC /* FoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodResponse.swift; sourceTree = "<group>"; };
@@ -94,7 +91,6 @@
 		A041F27D294A21940012C2AC /* DateFoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFoodPresenter.swift; sourceTree = "<group>"; };
 		A041F27F294A21A60012C2AC /* DateFoodRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFoodRouter.swift; sourceTree = "<group>"; };
 		A041F281294A21B60012C2AC /* DateFoodConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFoodConfigurator.swift; sourceTree = "<group>"; };
-		A041F283294A2AC00012C2AC /* FoodDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDate.swift; sourceTree = "<group>"; };
 		A041F285294A43C60012C2AC /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		A041F287294A43FF0012C2AC /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		A041F289294A46950012C2AC /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
@@ -227,20 +223,11 @@
 				A041F2572948CB5D0012C2AC /* Protocol */,
 				A041F1D32947BF030012C2AC /* Views */,
 				A041F1D22947BEFD0012C2AC /* Presenter */,
-				A041F1D02947BEF00012C2AC /* Interactor */,
 				A041F1D12947BEF60012C2AC /* Router */,
 				A041F1D42947BF190012C2AC /* Entity */,
 				A041F25B2948D63E0012C2AC /* Configurator */,
 			);
 			path = ListFood;
-			sourceTree = "<group>";
-		};
-		A041F1D02947BEF00012C2AC /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				A041F1D72947BF690012C2AC /* ListFoodInteractor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		A041F1D12947BEF60012C2AC /* Router */ = {
@@ -272,7 +259,6 @@
 			isa = PBXGroup;
 			children = (
 				A041F1D52947BF4B0012C2AC /* FoodEntity.swift */,
-				A041F283294A2AC00012C2AC /* FoodDate.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -600,9 +586,7 @@
 			files = (
 				A041F1E22947C0870012C2AC /* FoodResponse.swift in Sources */,
 				A041F2562948CB550012C2AC /* ListFoodProtocol.swift in Sources */,
-				A041F284294A2AC00012C2AC /* FoodDate.swift in Sources */,
 				A041F278294977F80012C2AC /* DetailsFoodRouter.swift in Sources */,
-				A041F1D82947BF690012C2AC /* ListFoodInteractor.swift in Sources */,
 				A041F274294973A30012C2AC /* DetailsFoodProtocols.swift in Sources */,
 				A041F280294A21A60012C2AC /* DateFoodRouter.swift in Sources */,
 				A041F1DD2947C0370012C2AC /* Networking.swift in Sources */,

@@ -14,7 +14,7 @@ class HomePresenter{
 }
 
 extension HomePresenter : HomePresenterProtocol{
-
+    
     func showCategorySelected(_ category: CategoryEntity?,_ listFood: [FoodEntity]){
         router?.presetCategory(category, listFood)
     }

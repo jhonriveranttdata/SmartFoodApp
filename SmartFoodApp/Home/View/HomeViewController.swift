@@ -23,22 +23,29 @@ class HomeViewController: UIViewController {
         let category : CategoryEntity? = nil
         presenter?.showCategorySelected(category,foodList)
     }
-    
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        presenter?.obtenerData()
-        DispatchQueue.main.async {
-            let user = self.userList?[0].avatar
-            self.activity.startAnimating()
-            let url = URL(string: user!)
-            if let data = try? Data(contentsOf: url!){
-                self.avatarUIImageView.image = UIImage(data: data)
-                self.avatarUIImageView.layer.cornerRadius = 8.5
-                self.activity.stopAnimating()
-                self.activity.hidesWhenStopped = true
-            }
+    func loadFrom(URLAddress: String) {
+        if let url = URL(string: URLAddress) {
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                // Error handling...
+                guard let imageData = data else { return }
+                
+                DispatchQueue.main.async {
+                    self.avatarUIImageView.image = UIImage(data: imageData)
+                    self.avatarUIImageView.layer.cornerRadius = 8.5
+                }
+            }.resume()
         }
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.activity.startAnimating()
+        presenter?.obtenerData()
+        let user = self.userList?[0].avatar
+        loadFrom(URLAddress: user!)
+
+
+        self.activity.stopAnimating()
+        self.activity.hidesWhenStopped = true
     }
     
 }

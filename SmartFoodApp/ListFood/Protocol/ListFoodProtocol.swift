@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 //View -> Presenter
 protocol ListFoodViewProtocol{
     func searchData(_ foods: [FoodEntity])
@@ -18,29 +19,12 @@ protocol ListFoodPresenterProtocol{
     var arrayFood: [FoodEntity] {get}
     func filterCategory()-> [FoodEntity]
     var food : [FoodEntity]{get}
-
-    func showFoodSelected(_ food: FoodEntity)
-}
-//Router -> Presenter
-protocol ListFoodRouterProtocol{
-    func presetFoodDetail(_ food: FoodEntity)
-}
-//Interactor -> Presenter
-/*
-protocol ListFoodInteractorProtocol{
-    func getDataFood()
-}
-//Router -> Presenter
-protocol ListFoodRouterProtocol{
-    func presetFoodDetail(_ food: FoodEntity)
-}
     
-//Presenter -> Interactor{
-protocol ListFoodPresenterOutPutInteractor{
-    func getDataFood(_ foods: [FoodEntity])
+    func showFoodSelected(_ food: FoodEntity)
+    //func search(_ searchTextField: UITextField)
+    //func searchTextFieldFn(_ textField: UITextField, _ searchTextField: UITextField )
 }
-
-//Interactor -> Networking
-protocol ListFoodRemoteRepositoryProtocol{
-    func FetchFoods() -> [FoodResponse]
-}*/
+//Router -> Presenter
+protocol ListFoodRouterProtocol{
+    func presetFoodDetail(_ food: FoodEntity)
+}
