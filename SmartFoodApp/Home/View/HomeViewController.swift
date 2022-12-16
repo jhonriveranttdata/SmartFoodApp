@@ -18,7 +18,6 @@ class HomeViewController: UIViewController {
     var presenter: HomePresenterProtocol?
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBAction func searchAll(_ sender: UIButton) {
         let category : CategoryEntity? = nil
         presenter?.showCategorySelected(category,foodList)
@@ -38,14 +37,10 @@ class HomeViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.activity.startAnimating()
+       
         presenter?.obtenerData()
         let user = self.userList?[0].avatar
         loadFrom(URLAddress: user!)
-
-
-        self.activity.stopAnimating()
-        self.activity.hidesWhenStopped = true
     }
     
 }
