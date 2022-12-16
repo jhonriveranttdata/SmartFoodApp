@@ -18,12 +18,13 @@ class DateFoodViewController: UIViewController {
         //getValuesDatePicker(date: dateNotiFood)
         presenter?.createNotification(date: dateNotiFood)
         //createNotification(date: dateNotiFood)
-        dismiss(animated: true)
+        _ = navigationController?.popViewController(animated: true)
+        //dismiss(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         descriptionTextView.text = presenter?.arrayFood.dato
-        foodDatePicker.preferredDatePickerStyle = .inline
+        //foodDatePicker.preferredDatePickerStyle = .inline
     }
 }
 /*

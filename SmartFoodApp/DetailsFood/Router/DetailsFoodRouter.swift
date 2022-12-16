@@ -24,11 +24,13 @@ extension DetailsFoodRouter : DetailsFoodRouterProtocol{
     func presentFoodDate(_ food: FoodEntity) {
         dateFoodConfigurator = DateFoodConfigurator()
         let  dateFoodViewController = dateFoodConfigurator!.make(food)
-        view?.present(dateFoodViewController, animated: true)
+        view?.navigationController?.pushViewController(dateFoodViewController, animated: true)
+        //view?.present(dateFoodViewController, animated: true)
     }
     func presetFoodPreparation(_ food: FoodEntity){
         preparationFoodConfigurator = PreparationFoodConfigurator()
         let preparationController = preparationFoodConfigurator!.make(food)
-        view?.present(preparationController, animated: true)
+        view?.navigationController?.pushViewController(preparationController, animated: true)
+        //view?.present(preparationController, animated: true)
     }
 }
