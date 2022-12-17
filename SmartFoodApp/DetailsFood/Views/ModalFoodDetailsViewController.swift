@@ -20,8 +20,10 @@ class ModalFoodDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let str = presenter?.arrayFood.imgName
-        loadFrom(URLAddress: str! )
+        
+        if let str = presenter?.arrayFood.imgName{
+            foodImage.image = UIImage(named: str)
+        }
         nameFoodLabel.text = presenter?.arrayFood.nombre
         categoryFoodLabel.text = presenter?.arrayFood.categoria
         ingredientsTextView.text = presenter?.arrayFood.ingredientes
@@ -42,17 +44,6 @@ class ModalFoodDetailsViewController: UIViewController {
         saveImgFavoriteButton.setImage(UIImage( systemName:"heart.fill"), for: .normal)
     }
     
-    func loadFrom(URLAddress: String) {
-        if let url = URL(string: URLAddress) {
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                // Error handling...
-                guard let imageData = data else { return }
-                
-                DispatchQueue.main.async {
-                    self.foodImage.image = UIImage(data: imageData)
-                }
-            }.resume()
-        }
-    }
+
 }
 

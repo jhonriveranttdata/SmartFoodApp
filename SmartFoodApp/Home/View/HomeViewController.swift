@@ -27,21 +27,9 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.obtenerData()
-        let user = self.userList?[0].avatar
-        loadFrom(URLAddress: user!)
-    }
-    
-    func loadFrom(URLAddress: String) {
-        if let url = URL(string: URLAddress) {
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                // Error handling...
-                guard let imageData = data else { return }
-                
-                DispatchQueue.main.async {
-                    self.avatarUIImageView.image = UIImage(data: imageData)
-                    self.avatarUIImageView.layer.cornerRadius = 8.5
-                }
-            }.resume()
+        if let user = self.userList?[0].avatar{
+            avatarUIImageView.image = UIImage(named: user)
+            avatarUIImageView.layer.cornerRadius = 8.5
         }
     }
 }

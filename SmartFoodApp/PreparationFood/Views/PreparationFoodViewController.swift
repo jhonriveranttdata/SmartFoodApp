@@ -18,23 +18,12 @@ class PreparationFoodViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let str = presenter?.preparation.imgName  {
-            //presenter?.getImage(URLImage: <#T##String#>)
-            getImage(URLImage: str)
+            imagePreparation.image = UIImage(named: str)
         }
-        
+
         nombreLabel.text = presenter?.preparation.nombre
         textViewPreparation.text = presenter?.preparation.preparacion
     }
     
-    func getImage(URLImage: String) {
-        if let url = URL(string: URLImage) {
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                // Error handling...
-                guard let imageData = data else { return }
-                DispatchQueue.main.async {
-                    self.imagePreparation.image = UIImage(data: imageData)
-                }
-            }.resume()
-        }
-    }
+
 }

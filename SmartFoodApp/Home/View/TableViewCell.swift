@@ -21,21 +21,8 @@ class TableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func loadFrom(URLAddress: String) {
-        if let url = URL(string: URLAddress) {
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                // Error handling...
-                guard let imageData = data else { return }
-                
-                DispatchQueue.main.async {
-                    self.imageCategory.image = UIImage(data: imageData)
-                }
-            }.resume()
-        }
-    }
-    
     func setupViewCellCategory(category: CategoryEntity){
-        loadFrom(URLAddress: category.imgName)
+        imageCategory.image = UIImage(named: category.imgName)
         nombreCategoriaLabel.text = category.nombre
     }
 }
