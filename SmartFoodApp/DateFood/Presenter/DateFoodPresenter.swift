@@ -27,18 +27,17 @@ extension DateFoodPresenter: DateFoodPresenterProtocol{
         content.title = "¡Hola! Llegó el momento de iniciar"
         content.body = "Tienes planeado preparar \(itemDate.nombre)"
         content.sound = .default
+
         return content
     }
-    
     func createNotification(date :UIDatePicker){
-        
         let notificationFood = UNUserNotificationCenter.current()
-        
         notificationFood.getNotificationSettings{ settings in
+            guard (settings.authorizationStatus == .authorized) || (settings.authorizationStatus == .provisional) else { return }
             DispatchQueue.main.async {
                 let components = Calendar.current.dateComponents([.day, .month, .year, .hour, .minute], from: date.date)
                 let id = components.minute
-                if (settings.authorizationStatus == .authorized) || (settings.authorizationStatus == .provisional) {
+                if settings.alertSetting == .enabled {
                     let content = self.notificacionSettingsContent()
                     let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
                     let request = UNNotificationRequest(identifier: "es un \(String(describing: id))", content: content, trigger: trigger)
@@ -46,7 +45,7 @@ extension DateFoodPresenter: DateFoodPresenterProtocol{
                         print("Error \(error?.localizedDescription ?? "")")
                     }
                 } else {
-                    notificationFood.requestAuthorization(options: [.alert, .sound ]) { (allowed, error ) in
+                    notificationFood.requestAuthorization(options: [.alert, .sound, .badge]) { (allowed, error ) in
                         allowed == true ? print("Permision Granted") : print("Error Occured or Permision Not Granted")
                     }
                     let content = self.notificacionSettingsContent()

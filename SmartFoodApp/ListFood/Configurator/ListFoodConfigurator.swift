@@ -15,7 +15,7 @@ class ListFoodConfgurator{
         let presenter = ListFoodPresenter(itemCategory: item, listFood: itemFood,foodArrayFiltered:itemFood ,backupFoodArray :itemFood)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: "ListFoodViewController") as! ListFoodViewController
-       let router = ListFoodRouter(presenter: presenter)
+        let router = ListFoodRouter(presenter: presenter)
         
        router.presenter = presenter
         router.view = view
