@@ -17,6 +17,4 @@ class TestViewController: UIViewController {
         let listaModulo = HomeConfgurator.makeHome()
         self.navigationController?.pushViewController(listaModulo, animated: true)
     }
-    
-
 }

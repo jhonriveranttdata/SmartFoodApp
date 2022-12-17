@@ -550,7 +550,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bW6-rc-ISk">
-                                <rect key="frame" x="353" y="96" width="40" height="40"/>
+                                <rect key="frame" x="337" y="96" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="TDe-4A-Rsx"/>
                                     <constraint firstAttribute="width" constant="40" id="tMr-Q9-WLJ"/>
@@ -568,7 +568,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XGu-zi-Rj2" firstAttribute="top" secondItem="uGl-a9-FcO" secondAttribute="top" constant="5" id="07F-oH-5Xg"/>
-                            <constraint firstItem="bW6-rc-ISk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XGu-zi-Rj2" secondAttribute="trailing" constant="8" symbolic="YES" id="2zI-Rh-xTW"/>
+                            <constraint firstItem="bW6-rc-ISk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XGu-zi-Rj2" secondAttribute="trailing" constant="156" id="2zI-Rh-xTW"/>
                             <constraint firstItem="Fee-Ae-Xwg" firstAttribute="top" secondItem="uGl-a9-FcO" secondAttribute="top" constant="5" id="HIz-Bh-woJ"/>
                             <constraint firstItem="Fee-Ae-Xwg" firstAttribute="leading" secondItem="uGl-a9-FcO" secondAttribute="leading" constant="15" id="HoN-dU-4yR"/>
                             <constraint firstItem="uGl-a9-FcO" firstAttribute="trailing" secondItem="JRx-dX-UKd" secondAttribute="trailing" id="IUb-mK-0dg"/>
@@ -576,12 +576,11 @@
                             <constraint firstItem="Q5a-Xc-L00" firstAttribute="leading" secondItem="Fee-Ae-Xwg" secondAttribute="trailing" constant="5" id="alA-fm-hAH"/>
                             <constraint firstItem="Q5a-Xc-L00" firstAttribute="top" secondItem="XGu-zi-Rj2" secondAttribute="bottom" constant="5" id="dKQ-ot-CBm"/>
                             <constraint firstItem="Q5a-Xc-L00" firstAttribute="top" secondItem="bW6-rc-ISk" secondAttribute="bottom" id="foN-JG-3Jg"/>
-                            <constraint firstItem="bW6-rc-ISk" firstAttribute="trailing" secondItem="uGl-a9-FcO" secondAttribute="trailing" id="iuv-UY-6Ij"/>
                             <constraint firstItem="JRx-dX-UKd" firstAttribute="top" secondItem="Fee-Ae-Xwg" secondAttribute="bottom" constant="20" id="jS4-8u-mIt"/>
                             <constraint firstItem="JRx-dX-UKd" firstAttribute="leading" secondItem="uGl-a9-FcO" secondAttribute="leading" id="kap-Vk-YFT"/>
                             <constraint firstItem="uGl-a9-FcO" firstAttribute="trailing" secondItem="Q5a-Xc-L00" secondAttribute="trailing" constant="30" id="r9U-DQ-gIV"/>
-                            <constraint firstItem="uGl-a9-FcO" firstAttribute="trailing" secondItem="bW6-rc-ISk" secondAttribute="trailing" id="rBh-8L-Jjb"/>
                             <constraint firstItem="XGu-zi-Rj2" firstAttribute="leading" secondItem="Fee-Ae-Xwg" secondAttribute="trailing" constant="5" id="xAL-IB-nN6"/>
+                            <constraint firstItem="uGl-a9-FcO" firstAttribute="trailing" secondItem="bW6-rc-ISk" secondAttribute="trailing" constant="16" id="yuP-lG-6Hg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" style="browser" id="IOa-Pr-RbQ">
