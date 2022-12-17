@@ -9,19 +9,28 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var avatarUIImageView: UIImageView!
-    @IBOutlet weak var nameUserLabel: UILabel!
     private var userList:[UserEntity]?
     private var categoryList:[CategoryEntity]?
     private var foodList:[FoodEntity]!
     private var allFood: [FoodEntity]!
     var presenter: HomePresenterProtocol?
+    
+    @IBOutlet weak var avatarUIImageView: UIImageView!
+    @IBOutlet weak var nameUserLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func searchAll(_ sender: UIButton) {
         let category : CategoryEntity? = nil
         presenter?.showCategorySelected(category,foodList)
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter?.obtenerData()
+        let user = self.userList?[0].avatar
+        loadFrom(URLAddress: user!)
+    }
+    
     func loadFrom(URLAddress: String) {
         if let url = URL(string: URLAddress) {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -35,28 +44,8 @@ class HomeViewController: UIViewController {
             }.resume()
         }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       
-        presenter?.obtenerData()
-        let user = self.userList?[0].avatar
-        loadFrom(URLAddress: user!)
-    }
-    
 }
-extension HomeViewController: HomeViewProtocol{
-    func showFood(_ food: [FoodEntity]) {
-        foodList = food
-    }
-    
-    func showCategory(_ category: [CategoryEntity]) {
-        categoryList = category
-    }
-    
-    func showUser(_ user: [UserEntity]) {
-        userList = user
-    }
-}
+
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -80,4 +69,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         presenter?.showCategorySelected(category,foodList)
     }
 }
+
+extension HomeViewController: HomeViewProtocol{
+    func showFood(_ food: [FoodEntity]) {
+        foodList = food
+    }
+    
+    func showCategory(_ category: [CategoryEntity]) {
+        categoryList = category
+    }
+    
+    func showUser(_ user: [UserEntity]) {
+        userList = user
+    }
+}
+
 

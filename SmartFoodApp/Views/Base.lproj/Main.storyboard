@@ -171,6 +171,9 @@
                                 <rect key="frame" x="5" y="108" width="383" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="searchTextField:" destination="l5S-RT-WRR" eventType="editingChanged" id="Lnh-Aw-e85"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JSi-MG-jgt"/>
@@ -191,7 +194,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="2Bw-ct-NrV"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchFoodTextField" destination="bRh-iH-Q4r" id="hrP-aa-MSK"/>
+                        <outlet property="searchFoodTextField" destination="bRh-iH-Q4r" id="kuf-ug-wKd"/>
                         <outlet property="tableView" destination="8Sa-Ub-9SY" id="ylr-Bs-t53"/>
                     </connections>
                 </viewController>

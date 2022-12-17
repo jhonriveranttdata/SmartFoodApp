@@ -12,7 +12,7 @@ import UserNotifications
 class DateFoodPresenter{
     private let itemDate: FoodEntity
     @Published var notificationArray = [UNNotificationRequest]()
-    var router: DateFoodRouterProtocol?
+    //var router: DateFoodRouterProtocol?
     required init(itemDate: FoodEntity) {
         self.itemDate = itemDate
     }

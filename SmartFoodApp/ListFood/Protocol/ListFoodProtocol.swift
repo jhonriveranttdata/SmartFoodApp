@@ -19,10 +19,8 @@ protocol ListFoodPresenterProtocol{
     var arrayFood: [FoodEntity] {get}
     func filterCategory()-> [FoodEntity]
     var food : [FoodEntity]{get}
-    
+    func searchFood(_ text: String)
     func showFoodSelected(_ food: FoodEntity)
-    //func search(_ searchTextField: UITextField)
-    //func searchTextFieldFn(_ textField: UITextField, _ searchTextField: UITextField )
 }
 //Router -> Presenter
 protocol ListFoodRouterProtocol{

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 protocol DetailsFoodPresenterProtocol{
     var arrayFood: FoodEntity {get}
     func showFoodDate(_ food: FoodEntity)
@@ -17,6 +18,7 @@ protocol DetailsFoodRouterProtocol{
     func presentFoodDate (_ food: FoodEntity)
     func presetFoodPreparation(_ food: FoodEntity)
 }
+
 public protocol DetailsFoodConfiguratorDelegate{
     func detailsFoodConfigurator(didDismiss viewController: UIViewController)
 }

@@ -8,13 +8,14 @@
 import Foundation
 
 class DetailsFoodPresenter{
+    
     private let itemDetail: FoodEntity
     var router: DetailsFoodRouterProtocol?
     required init(itemDetail: FoodEntity) {
         self.itemDetail = itemDetail
     }
-    
 }
+
 extension DetailsFoodPresenter: DetailsFoodPresenterProtocol{
     var arrayFood: FoodEntity {
         itemDetail

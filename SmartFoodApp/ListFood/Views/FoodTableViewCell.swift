@@ -18,9 +18,11 @@ class FoodTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
     func loadFrom(URLAddress: String) {
         if let url = URL(string: URLAddress) {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -33,6 +35,7 @@ class FoodTableViewCell: UITableViewCell {
             }.resume()
         }
     }
+    
     func setupViewCell(food:FoodEntity){
         loadFrom(URLAddress: food.imgName)
         nameFoodCell.text = food.nombre

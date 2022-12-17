@@ -16,7 +16,6 @@ class FoodMocksAPI : HomeRemoteRepositoryProtocol{
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
                 let result = try decoder.decode([FoodResponse].self, from: data)
-                print(result)
                 return result
             }catch let error {
                 print(error.localizedDescription)
@@ -32,7 +31,6 @@ class FoodMocksAPI : HomeRemoteRepositoryProtocol{
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
                 let result = try decoder.decode([CategoryFoods].self, from: data)
-                print(result)
                 return result
             }catch let error {
                 print(error.localizedDescription)

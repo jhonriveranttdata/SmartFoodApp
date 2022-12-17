@@ -17,14 +17,17 @@ class PreparationFoodViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let str = presenter?.preparation.imgName else { return }
-        loadFrom(URLAddress: str)
+        if let str = presenter?.preparation.imgName  {
+            //presenter?.getImage(URLImage: <#T##String#>)
+            getImage(URLImage: str)
+        }
+        
         nombreLabel.text = presenter?.preparation.nombre
         textViewPreparation.text = presenter?.preparation.preparacion
     }
     
-    func loadFrom(URLAddress: String) {
-        if let url = URL(string: URLAddress) {
+    func getImage(URLImage: String) {
+        if let url = URL(string: URLImage) {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 // Error handling...
                 guard let imageData = data else { return }

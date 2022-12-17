@@ -12,9 +12,6 @@ protocol DateFoodPresenterProtocol{
     var arrayFood: FoodEntity{get}
     func createNotification(date :UIDatePicker)
 }
-protocol DateFoodRouterProtocol{
-    func dismiss()
-}
 
 public protocol DateFoodConfiguratorDelegate{
     func dateFoodConfigurator(didDismiss viewcontroller: UIViewController)

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 class DateFoodConfigurator {
+    
     func make(_ itemDate: FoodEntity) -> UIViewController {
         let presenter = DateFoodPresenter(itemDate: itemDate)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

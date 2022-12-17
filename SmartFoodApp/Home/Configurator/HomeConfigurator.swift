@@ -7,8 +7,10 @@
 
 import Foundation
 import UIKit
+
 class HomeConfgurator{
-    static func makeHome()-> UIViewController{
+    
+    static func makeHome() -> UIViewController{
         let presenter = HomePresenter()
         let api = FoodMocksAPI()
         let interactor = HomeInteractor(presenter: presenter, api: api)
